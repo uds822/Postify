@@ -4,7 +4,8 @@ const userModel = require("./models/user");
 const postModel = require("./models/post");
 const cookieParser = require('cookie-parser'); // Corrected this line
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 
 app.set('view engine', 'ejs');
 app.use(express.json());
